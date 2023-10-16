@@ -14,6 +14,7 @@ class LoginScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Image.asset(
           Constants.logoPath,
           height: 40,
