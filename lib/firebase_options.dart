@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -49,9 +46,18 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDuv5WF1PwwLOzjW967CpLjGxdfhZNJw6U',
+    appId: '1:870447610086:web:64fe1d11c9b2a8161e2327',
+    messagingSenderId: '870447610086',
+    projectId: 'reddit-clone-flutter-769c0',
+    authDomain: 'reddit-clone-flutter-769c0.firebaseapp.com',
+    storageBucket: 'reddit-clone-flutter-769c0.appspot.com',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCTZpz-ZNsokcGw9MkvAASG57jFBlBB7VQ',
-    appId: '1:870447610086:android:fbd92db1c96a56511e2327',
+    appId: '1:870447610086:android:5247f8df75b504251e2327',
     messagingSenderId: '870447610086',
     projectId: 'reddit-clone-flutter-769c0',
     storageBucket: 'reddit-clone-flutter-769c0.appspot.com',
@@ -59,10 +65,12 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCRITUH5567CyhmY3YE7LNg7SXebRGU3cg',
-    appId: '1:870447610086:ios:809e0e47ec68f7351e2327',
+    appId: '1:870447610086:ios:afa715ba8d4e525a1e2327',
     messagingSenderId: '870447610086',
     projectId: 'reddit-clone-flutter-769c0',
     storageBucket: 'reddit-clone-flutter-769c0.appspot.com',
+    androidClientId: '870447610086-hin8ucp8pem8q7pdc46he4reo5eeoluc.apps.googleusercontent.com',
+    iosClientId: '870447610086-bd98b8h9jav78q1ocum0qbvl5gc4f42l.apps.googleusercontent.com',
     iosBundleId: 'com.example.redditClone',
   );
 }

@@ -7,20 +7,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:870447610086:android:fbd92db1c96a56511e2327",
+        "mobilesdk_app_id": "1:870447610086:android:5247f8df75b504251e2327",
         "android_client_info": {
           "package_name": "com.example.reddit_clone"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "870447610086-hin8ucp8pem8q7pdc46he4reo5eeoluc.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.reddit_clone",
-            "certificate_hash": "e32ad0c44e78a409c1fe7cedaec351c78eb87cfc"
-          }
-        },
         {
           "client_id": "870447610086-61o2f4vg8bu86gd1vqo73gun87fu1ppp.apps.googleusercontent.com",
           "client_type": 3
